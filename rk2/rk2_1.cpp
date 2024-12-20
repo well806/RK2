@@ -12,7 +12,7 @@ int main() {
     int B = stoi(B_str, nullptr, 2);  
 
     
-    int and_result = A & B;
+    int and_res = A & B;
 
     int sum = A + B;
 
@@ -20,7 +20,7 @@ int main() {
     cout << "A (d): " << A << ", A (b): " << bitset<6>(A) << endl;
     cout << "B (d): " << B << ", B (b): " << bitset<6>(B) << endl;
 
-    cout << "AND result: " << bitset<6>(and_result) << " (b), " << and_result << " (d)" << endl;
+    cout << "AND result: " << bitset<6>(and_res) << " (b), " << and_res << " (d)" << endl;
     cout << "Sum result: " << bitset<7>(sum) << " (b), " << sum << " (d)" << endl;
 
     return 0;
