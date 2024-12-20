@@ -4,19 +4,19 @@ if [ $# -ne 2 ]; then
     exit 1
 fi
     
-DIRECTORY=$1
-EXTENSION=$2
+d=$1
+e=$2
 
-if [ ! -d "$DIRECTORY" ]; then
+if [ ! -d "$d" ]; then
     echo "Директория не найдена."
     exit 1
 fi
 
-FILES=$(find "$DIRECTORY" -type f -name "*.$EXTENSION")
+f=$(find "$d" -type f -name "*.$e")
 
-if [ -z "$FILES" ]; then
-    echo "Файлы с расширением $EXTENSION не найдены."
+if [ -z "$f" ]; then
+    echo "Файлы с расширением $e не найдены."
 else
     echo "Найденные файлы:"
-    echo "$FILES"
+    echo "$f"
 fi
